@@ -1,14 +1,14 @@
 <?php
 
-/* index.html */
-class __TwigTemplate_9fecb9811b9d363d7f813ce7bcaade23e4cbf034dda6bc4056125d15b9aa7590 extends Twig_Template
+/* project.html */
+class __TwigTemplate_d583839bb592fe41fad4a44c03eded449fb1a69fb6815a0f5904277dea1e7c4b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("mainTemplate.html", "index.html", 1);
+        $this->parent = $this->loadTemplate("mainTemplate.html", "project.html", 1);
         $this->blocks = array(
             'mainContent' => array($this, 'block_mainContent'),
         );
@@ -28,12 +28,13 @@ class __TwigTemplate_9fecb9811b9d363d7f813ce7bcaade23e4cbf034dda6bc4056125d15b9a
     public function block_mainContent($context, array $blocks = array())
     {
         // line 4
-        $this->loadTemplate("indexBlurb.html", "index.html", 4)->display($context);
+        echo "
+";
     }
 
     public function getTemplateName()
     {
-        return "index.html";
+        return "project.html";
     }
 
     public function isTraitable()
@@ -51,7 +52,7 @@ class __TwigTemplate_9fecb9811b9d363d7f813ce7bcaade23e4cbf034dda6bc4056125d15b9a
         return new Twig_Source("{% extends \"mainTemplate.html\" %}
 
 {% block mainContent %}
-{% include 'indexBlurb.html' %}
-{% endblock %}", "index.html", "C:\\Users\\matt\\Dropbox\\MattIsAwesome\\twig\\templates\\index.html");
+
+{% endblock %}", "project.html", "C:\\Users\\matt\\Dropbox\\MattIsAwesome\\twig\\templates\\project.html");
     }
 }
